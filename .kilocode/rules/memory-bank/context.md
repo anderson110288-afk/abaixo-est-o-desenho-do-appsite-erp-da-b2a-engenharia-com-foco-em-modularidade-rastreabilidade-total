@@ -27,6 +27,10 @@ Full modular ERP for construction management (B2A Engenharia) with mobile-first 
 - [x] Pendências module: checklist with criticality, due dates, status workflow
 - [x] Compras module: solicitações + multi-supplier quotation comparison + pedidos
 - [x] Equipes module: empreiteiros with anti-duplicity engine demo, equipes, atividades padrão
+- [x] ESLint fix: downgrade to 9.23.0 (incompatibility with ESLint 10.x and eslint-config-next 16.1.6)
+- [x] vercel.json updated to use bun for build command
+- [x] Deploy to GitHub: bun.lock updated with new dependencies (@supabase/supabase-js, jspdf, jspdf-autotable, sonner)
+- [x] Full build verification: typecheck ✅, lint ✅, build ✅
 
 ## Current Structure
 
@@ -102,3 +106,4 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
+| 2026-03-23 | ESLint fix (9.x), vercel.json build command to bun, deploy to GitHub with updated bun.lock (new deps: supabase, jspdf, sonner) |
